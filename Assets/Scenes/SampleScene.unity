@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 199420461}
   - component: {fileID: 199420460}
   - component: {fileID: 199420462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 8
-  jumpForce: 5
+  jumpForce: 12
+  groundCheckDistance: 1.4
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundDetected: 0
 --- !u!4 &682244550
 Transform:
   m_ObjectHideFlags: 0
@@ -576,9 +581,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 0.1
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
