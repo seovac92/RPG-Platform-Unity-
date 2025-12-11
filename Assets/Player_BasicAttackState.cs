@@ -4,9 +4,12 @@ public class Player_BasicAttackState : EntityState
 {
     private float attackVelocityTimer;
     private const int FirstComboIndex = 1;
-    private int comboIndex = FirstComboIndex;
+    private int comboIndex = 1;
     private int comboLimit = 3;
+    private bool comboAttackQueued;
+
     private float lastTimeAttacked;
+
     public Player_BasicAttackState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
     {
         if (comboLimit != player.attackVelocity.Length)
@@ -17,7 +20,6 @@ public class Player_BasicAttackState : EntityState
     public override void Enter()
     {
         base.Enter();
-
         ResetComboIndexIfNeeded();
 
         anim.SetInteger("basicAttackIndex", comboIndex);

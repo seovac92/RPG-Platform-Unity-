@@ -26,6 +26,7 @@ public abstract class EntityState
     {
         anim.SetBool(animBoolName, true);
         triggerCalled = false;
+        Debug.Log(animBoolName + "ulaz");
     }
     public virtual void Update()
     {
@@ -36,14 +37,11 @@ public abstract class EntityState
         {
             stateMachine.ChangeState(player.dashState);
         }
-        if (input.Player.Attack.WasPressedThisFrame())
-        {
-            stateMachine.ChangeState(player.basicAttackState);
-        }
     }
     public virtual void Exit()
     {
         anim.SetBool(animBoolName, false);
+        Debug.Log(animBoolName + "izlaz");
     }
     public void CallAnimationTrigger()
     {
