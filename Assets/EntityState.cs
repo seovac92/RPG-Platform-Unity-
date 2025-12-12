@@ -26,7 +26,6 @@ public abstract class EntityState
     {
         anim.SetBool(animBoolName, true);
         triggerCalled = false;
-        Debug.Log(animBoolName + "ulaz");
     }
     public virtual void Update()
     {
@@ -41,7 +40,6 @@ public abstract class EntityState
     public virtual void Exit()
     {
         anim.SetBool(animBoolName, false);
-        Debug.Log(animBoolName + "izlaz");
     }
     public void CallAnimationTrigger()
     {
