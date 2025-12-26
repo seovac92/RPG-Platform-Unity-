@@ -11,7 +11,7 @@ public class ParallaxBackground : MonoBehaviour
     {
         mainCamera = Camera.main;
         cameraHalfWidth = mainCamera.orthographicSize * mainCamera.aspect;
-        CalculateImageLength();
+        InitializeLayers();
     }
     private void FixedUpdate()
     {
@@ -28,7 +28,7 @@ public class ParallaxBackground : MonoBehaviour
             layer.LoopBackground(cameraLeftEdge, cameraRightEdge);
         }
     }
-    private void CalculateImageLength()
+    private void InitializeLayers()
     {
         foreach (ParallaxLayer layer in backgroundLayers)
         {
