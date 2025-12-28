@@ -193,10 +193,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 20
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,10 +215,10 @@ TextureImporter:
         serializedVersion: 2
         x: 22
         y: 0
-        width: 20
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,10 +237,10 @@ TextureImporter:
         serializedVersion: 2
         x: 44
         y: 0
-        width: 20
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: Skeleton Walk_3
       rect:
         serializedVersion: 2
-        x: 65
+        x: 66
         y: 0
         width: 22
-        height: 33
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,20 +279,20 @@ TextureImporter:
       name: Skeleton Walk_4
       rect:
         serializedVersion: 2
-        x: 87
+        x: 88
         y: 0
-        width: 23
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 341b25cd319be9ae0800000000000000
-      internalID: -1540590527562206909
+      spriteID: 7c7ebc2c6dd3bd849b93bf602a6c1f60
+      internalID: -281920462
       vertices: []
       indices: 
       edges: []
@@ -301,20 +301,20 @@ TextureImporter:
       name: Skeleton Walk_5
       rect:
         serializedVersion: 2
-        x: 109
+        x: 110
         y: 0
-        width: 24
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bf631c19cc57ba890800000000000000
-      internalID: -7445728037447846149
+      spriteID: 8943d01b4d4e2ea43bc7a681d96bd8bd
+      internalID: -1835166306
       vertices: []
       indices: 
       edges: []
@@ -323,20 +323,20 @@ TextureImporter:
       name: Skeleton Walk_6
       rect:
         serializedVersion: 2
-        x: 131
+        x: 132
         y: 0
-        width: 24
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 526f23ece29e08240800000000000000
-      internalID: 4792086390759421477
+      spriteID: 7f0788e1497f3704f80bb6be4733993c
+      internalID: -320814568
       vertices: []
       indices: 
       edges: []
@@ -345,20 +345,20 @@ TextureImporter:
       name: Skeleton Walk_7
       rect:
         serializedVersion: 2
-        x: 153
+        x: 154
         y: 0
-        width: 24
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a496776a6c4b1ffc0800000000000000
-      internalID: -3462787873181832886
+      spriteID: be091b93921e9dd4e9adf81c4a4c0da8
+      internalID: 1682231156
       vertices: []
       indices: 
       edges: []
@@ -367,20 +367,20 @@ TextureImporter:
       name: Skeleton Walk_8
       rect:
         serializedVersion: 2
-        x: 175
+        x: 176
         y: 0
-        width: 24
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 20933f83d3a308b60800000000000000
-      internalID: 7746255393700133122
+      spriteID: 99729baa451e97d46a5f907de99be722
+      internalID: -938602847
       vertices: []
       indices: 
       edges: []
@@ -389,20 +389,20 @@ TextureImporter:
       name: Skeleton Walk_9
       rect:
         serializedVersion: 2
-        x: 197
+        x: 198
         y: 0
-        width: 24
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: abfddabc39b063e30800000000000000
-      internalID: 4482783208499175354
+      spriteID: 373c9c1c4943c4647925f06e7ac5a879
+      internalID: 1120143767
       vertices: []
       indices: 
       edges: []
@@ -414,17 +414,17 @@ TextureImporter:
         x: 220
         y: 0
         width: 22
-        height: 33
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f44f66bb61320510800000000000000
-      internalID: 1513826763441915127
+      spriteID: 00012037bfc195746bf10e01779ad43c
+      internalID: -290778366
       vertices: []
       indices: 
       edges: []
@@ -433,20 +433,20 @@ TextureImporter:
       name: Skeleton Walk_11
       rect:
         serializedVersion: 2
-        x: 243
+        x: 242
         y: 0
-        width: 20
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad25096bb6f2532e0800000000000000
-      internalID: -2146757507701255462
+      spriteID: cedca53016a51ae4a8715657e01c7c1d
+      internalID: 144503257
       vertices: []
       indices: 
       edges: []
@@ -455,20 +455,20 @@ TextureImporter:
       name: Skeleton Walk_12
       rect:
         serializedVersion: 2
-        x: 265
+        x: 264
         y: 0
-        width: 19
-        height: 33
+        width: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5620c747c63b5cab0800000000000000
-      internalID: -4988383733850832283
+      spriteID: 20329647cb2578948b559fc7a5d1aa0f
+      internalID: -921838972
       vertices: []
       indices: 
       edges: []
@@ -477,7 +477,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 78a4694f068533c4c999eafb5861c402
     internalID: 0
     vertices: []
     indices: 
@@ -485,21 +485,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":22.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":1.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Skeleton Walk_0: 45966500872709769
       Skeleton Walk_1: 7013577002690406627
-      Skeleton Walk_10: 1513826763441915127
-      Skeleton Walk_11: -2146757507701255462
-      Skeleton Walk_12: -4988383733850832283
+      Skeleton Walk_10: -290778366
+      Skeleton Walk_11: 144503257
+      Skeleton Walk_12: -921838972
       Skeleton Walk_2: -2356003859601637949
       Skeleton Walk_3: 2369481524001456022
-      Skeleton Walk_4: -1540590527562206909
-      Skeleton Walk_5: -7445728037447846149
-      Skeleton Walk_6: 4792086390759421477
-      Skeleton Walk_7: -3462787873181832886
-      Skeleton Walk_8: 7746255393700133122
-      Skeleton Walk_9: 4482783208499175354
+      Skeleton Walk_4: -281920462
+      Skeleton Walk_5: -1835166306
+      Skeleton Walk_6: -320814568
+      Skeleton Walk_7: 1682231156
+      Skeleton Walk_8: -938602847
+      Skeleton Walk_9: 1120143767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
