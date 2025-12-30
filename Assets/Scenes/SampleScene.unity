@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 9267559}
   - component: {fileID: 9267560}
   - component: {fileID: 9267561}
+  - component: {fileID: 9267562}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -232,6 +233,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9267562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9267558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb6fc536ca9832419fc9a8995b89774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Entity_AnimationTriggers
 --- !u!1 &240842571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,7 +2804,7 @@ GameObject:
   - component: {fileID: 682244549}
   - component: {fileID: 682244551}
   - component: {fileID: 682244552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2957,7 +2970,7 @@ GameObject:
   - component: {fileID: 802398446}
   - component: {fileID: 802398447}
   - component: {fileID: 802398448}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3220,6 +3233,11 @@ MonoBehaviour:
   idleTime: 2
   moveSpeed: 1.4
   moveAnimSpeedMultiplier: 1
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  playerCheck: {fileID: 1063455924}
+  playerCheckDistance: 10
 --- !u!50 &1063455926
 Rigidbody2D:
   serializedVersion: 5
@@ -9702,7 +9720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905431426}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PrimaryWallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9786,7 +9804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1996484567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SecondaryWallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
