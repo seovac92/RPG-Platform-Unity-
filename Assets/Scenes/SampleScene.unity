@@ -2823,11 +2823,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb91dfe82ae0544999853c5213ba495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  groundCheckDistance: 1.4
-  wallCheckDistance: 0.45
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  groundCheckDistance: 1.4
+  wallCheckDistance: 0.45
   groundCheck: {fileID: 682244550}
   primaryWallCheck: {fileID: 1905431426}
   secondaryWallCheck: {fileID: 1996484567}
@@ -2970,7 +2970,7 @@ GameObject:
   - component: {fileID: 802398446}
   - component: {fileID: 802398447}
   - component: {fileID: 802398448}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3186,7 +3186,7 @@ GameObject:
   - component: {fileID: 1063455925}
   - component: {fileID: 1063455926}
   - component: {fileID: 1063455927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3222,14 +3222,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1e010899a01414fb29e05950d360e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Skeleton
-  groundCheckDistance: 0.5
-  wallCheckDistance: 0.8
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  groundCheckDistance: 0.5
+  wallCheckDistance: 0.8
   groundCheck: {fileID: 770948577}
   primaryWallCheck: {fileID: 1063455924}
   secondaryWallCheck: {fileID: 0}
+  battleMoveSpeed: 3
+  attackDistance: 2
+  battleTimeDuration: 5
+  minRetreatDistance: 1
+  retreatVelocity: {x: 5, y: 3}
   idleTime: 2
   moveSpeed: 1.4
   moveAnimSpeedMultiplier: 1
@@ -9720,7 +9725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905431426}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PrimaryWallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9804,7 +9809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1996484567}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SecondaryWallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

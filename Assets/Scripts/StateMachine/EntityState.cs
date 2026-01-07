@@ -22,13 +22,18 @@ public abstract class EntityState
     public virtual void Update()
     {
         stateTimer -= Time.deltaTime;
+        UpdateAnimationParametars();
     }
     public virtual void Exit()
     {
         anim.SetBool(animBoolName, false);
     }
-    public void CallAnimationTrigger()
+    public void AnimationTrigger()
     {
         triggerCalled = true;
+    }
+    public virtual void UpdateAnimationParametars()
+    {
+
     }
 }

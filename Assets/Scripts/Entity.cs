@@ -33,22 +33,22 @@ public class Entity : MonoBehaviour
     {
 
     }
-    private void Update()
+    protected virtual void Update()
     {
         HandleCollisionDetection();
         stateMachine.UpdateActiveState();
     }
 
-    public void CallAnimationTrigger()
+    public void CurrentStateAnimationTrigger()
     {
-        stateMachine.currentState.CallAnimationTrigger();
+        stateMachine.currentState.AnimationTrigger();
     }
     public void SetVelocity(float xVelocity, float yVelocity)
     {
         rb.linearVelocity = new Vector2(xVelocity, yVelocity);
         HandleFlip(xVelocity);
     }
-    private void HandleFlip(float xVelocity)
+    public void HandleFlip(float xVelocity)
     {
         if (xVelocity > 0 && !facingRight)
         {
