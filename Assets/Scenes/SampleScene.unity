@@ -2868,9 +2868,10 @@ GameObject:
   - component: {fileID: 682244552}
   - component: {fileID: 682244553}
   - component: {fileID: 682244554}
+  - component: {fileID: 682244555}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3004,6 +3005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53067d575a84094e9d9d40a352cc474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
+  damage: 10
   targetCheck: {fileID: 223454649}
   targetCheckRadius: 1
   whatIsTarget:
@@ -3023,6 +3025,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Health
   maxHp: 100
   isDead: 0
+--- !u!114 &682244555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682244548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf8d400410dee04ca8f29218d7253b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
+  onDamageMaterial: {fileID: 2100000, guid: 1c339d1199f89724295528374f01146e, type: 2}
+  onDamageVfxDuration: 0.2
 --- !u!1 &770948576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,6 +3300,7 @@ GameObject:
   - component: {fileID: 1063455927}
   - component: {fileID: 1063455928}
   - component: {fileID: 1063455929}
+  - component: {fileID: 1063455930}
   m_Layer: 8
   m_Name: Enemy_Skeleton
   m_TagString: Untagged
@@ -3418,6 +3435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53067d575a84094e9d9d40a352cc474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
+  damage: 10
   targetCheck: {fileID: 651479313}
   targetCheckRadius: 1
   whatIsTarget:
@@ -3432,11 +3450,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1063455923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f083948fa224e45a55157536e5742d, type: 3}
+  m_Script: {fileID: 11500000, guid: a9e7e254d5139004f9bc6a49597264a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Entity_Health
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy_Health
   maxHp: 100
   isDead: 0
+--- !u!114 &1063455930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063455923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf8d400410dee04ca8f29218d7253b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
+  onDamageMaterial: {fileID: 2100000, guid: 1c339d1199f89724295528374f01146e, type: 2}
+  onDamageVfxDuration: 0.2
 --- !u!1 &1241216358
 GameObject:
   m_ObjectHideFlags: 0
