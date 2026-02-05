@@ -6,6 +6,7 @@ public class Enemy : Entity
     public Enemy_MoveState moveState;
     public Enemy_AttackState attackState;
     public Enemy_BattleState battleState;
+    public Enemy_DeadState deadState;
 
     [Header("Battle details")]
     public float battleMoveSpeed = 3;
@@ -25,6 +26,16 @@ public class Enemy : Entity
     [SerializeField] private float playerCheckDistance = 10;
     public Transform player { get; private set; }
 
+    public override void EntityDeath()
+    {
+        base.EntityDeath();
+
+        stateMachine.ChangeState(deadState);
+    }
+    private void HandlePlayerDeath()
+    {
+        stateMachine.ChangeState(idleState);
+    }
     public void TryEnterBattleMode(Transform player)
     {
         if (stateMachine.currentState == battleState || stateMachine.currentState == attackState)
@@ -50,7 +61,6 @@ public class Enemy : Entity
         {
             return default;
         }
-        Debug.Log(hit.transform.position);
         return hit;
     }
 
@@ -65,5 +75,13 @@ public class Enemy : Entity
         Gizmos.color = Color.green;
         Gizmos.DrawLine(playerCheck.position, playerCheck.position + new Vector3(minRetreatDistance * facingDir, 0));
 
+    }
+    private void OnEnable()
+    {
+        Player.OnPlayerDeath += HandlePlayerDeath;
+    }
+    private void OnDisable()
+    {
+        Player.OnPlayerDeath -= HandlePlayerDeath;
     }
 }

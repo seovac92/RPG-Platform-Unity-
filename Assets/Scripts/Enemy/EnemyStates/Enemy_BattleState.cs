@@ -54,7 +54,6 @@ public class Enemy_BattleState : EnemyState
         {
             return float.MaxValue;
         }
-        Debug.Log("PLAYER: " + player.position.x + " ENEMY: " + enemy.transform.position.x);
         return Mathf.Abs(player.position.x - enemy.transform.position.x);
     }
     private int DirectionToPlayer()

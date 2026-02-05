@@ -2963,8 +2963,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.034704566, y: -0.35316837}
-  m_Size: {x: 0.804333, y: 2.0022008}
+  m_Offset: {x: 0.034704566, y: -0.3430102}
+  m_Size: {x: 0.804333, y: 1.9818845}
   m_Direction: 0
 --- !u!50 &682244552
 Rigidbody2D:
@@ -3005,7 +3005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53067d575a84094e9d9d40a352cc474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
-  damage: 10
+  damage: 40
   targetCheck: {fileID: 223454649}
   targetCheckRadius: 1
   whatIsTarget:
@@ -3023,8 +3023,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f083948fa224e45a55157536e5742d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Health
+  currentHp: 0
   maxHp: 100
   isDead: 0
+  knockbackPower: {x: 1.5, y: 2.5}
+  heavyKnockbackPower: {x: 7, y: 7}
+  knockbackDuration: 0.2
+  heavyKnockbackDuration: 0.5
+  heavyDamageThreshold: 0.3
 --- !u!114 &682244555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,8 +3459,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e7e254d5139004f9bc6a49597264a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Health
+  currentHp: 0
   maxHp: 100
   isDead: 0
+  knockbackPower: {x: 1.5, y: 2.5}
+  heavyKnockbackPower: {x: 7, y: 7}
+  knockbackDuration: 0.2
+  heavyKnockbackDuration: 0.5
+  heavyDamageThreshold: 0.3
 --- !u!114 &1063455930
 MonoBehaviour:
   m_ObjectHideFlags: 0
