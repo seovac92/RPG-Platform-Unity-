@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 519733781d7c9ba45967ad7273076031
+guid: 725178bc17f463c47a532aac2bc75e19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8181396477003839159
-    second: Enemy_AttackAlert_0
-  - first:
-      213: 4961445968188712750
-    second: Enemy_AttackAlert_1
-  - first:
-      213: -8357495285596298861
-    second: Enemy_AttackAlert_2
-  - first:
-      213: -8900005401159255355
-    second: Enemy_AttackAlert_3
+      213: 4783886219450054430
+    second: SP103_04_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -161,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_AttackAlert_0
+      name: SP103_04_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 35
-        width: 12
-        height: 26
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,74 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b6327abfb82a8170800000000000000
-      internalID: 8181396477003839159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_AttackAlert_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 34
-        width: 16
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e27ae2a32d89ad440800000000000000
-      internalID: 4961445968188712750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_AttackAlert_2
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 2
-        width: 16
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 391e7025156340c80800000000000000
-      internalID: -8357495285596298861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_AttackAlert_3
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 3
-        width: 16
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ca38dced34dc7480800000000000000
-      internalID: -8900005401159255355
+      spriteID: e17f434ab27c36240800000000000000
+      internalID: 4783886219450054430
       vertices: []
       indices: 
       edges: []
@@ -252,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -262,10 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy_AttackAlert_0: 8181396477003839159
-      Enemy_AttackAlert_1: 4961445968188712750
-      Enemy_AttackAlert_2: -8357495285596298861
-      Enemy_AttackAlert_3: -8900005401159255355
+      SP103_04_0: 4783886219450054430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

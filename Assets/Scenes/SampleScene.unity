@@ -3027,6 +3027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
   onDamageMaterial: {fileID: 2100000, guid: 1c339d1199f89724295528374f01146e, type: 2}
   onDamageVfxDuration: 0.2
+  hitVfxColor: {r: 1, g: 0, b: 0, a: 1}
+  hitVfx: {fileID: 8974720269148361487, guid: c44dfa51082d76b45b03ad31e72ef485, type: 3}
 --- !u!114 &682244556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3339,6 +3341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
   onDamageMaterial: {fileID: 2100000, guid: 1c339d1199f89724295528374f01146e, type: 2}
   onDamageVfxDuration: 0.2
+  hitVfxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitVfx: {fileID: 0}
 --- !u!1 &843078987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3622,6 +3626,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_VFX
   onDamageMaterial: {fileID: 2100000, guid: 1c339d1199f89724295528374f01146e, type: 2}
   onDamageVfxDuration: 0.2
+  hitVfxColor: {r: 0, g: 0, b: 0, a: 1}
+  hitVfx: {fileID: 8974720269148361487, guid: c44dfa51082d76b45b03ad31e72ef485, type: 3}
   attackAlert: {fileID: 1524161520}
 --- !u!1 &1241216358
 GameObject:
@@ -3870,7 +3876,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.024, y: 0.815, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1063455924}
@@ -3922,7 +3928,7 @@ SpriteRenderer:
   m_SortingLayerID: -739910997
   m_SortingLayer: -2
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -8900005401159255355, guid: 519733781d7c9ba45967ad7273076031, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
