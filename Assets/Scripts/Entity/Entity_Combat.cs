@@ -22,7 +22,9 @@ public class Entity_Combat : MonoBehaviour
             IDamagable damagable = target.GetComponent<IDamagable>();
             if (damagable == null) continue;
 
-            damagable.TakeDamage(damage, transform);
+            bool targetGotHit = damagable.TakeDamage(damage, transform);
+
+            if (!targetGotHit) return;
             vfx.CreateOnHitVFX(target.transform);
         }
     }
