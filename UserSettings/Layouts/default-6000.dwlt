@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 382}
   m_MaxSize: {x: 10000, y: 10000}
@@ -427,7 +427,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fcfaffffeebe0000
+      m_ExpandedIDs: fcfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1542,7 +1542,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/StatSystem
+    - Assets/Scripts/Entity
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1552,15 +1552,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 45
   m_LastFolders:
-  - Assets/Scripts/StatSystem
+  - Assets/Scripts/Entity
   m_LastFoldersGridSize: 45
   m_LastProjectPath: C:\Users\Marko\RPG platform
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79.600006}
-    m_SelectedIDs: fad80000
-    m_LastClickedID: 55546
+    m_SelectedIDs: 64c40000
+    m_LastClickedID: 50276
     m_ExpandedIDs: 00000000bac20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1722,7 +1722,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 48826
+  m_LastSelectedObjectID: 48900
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1766,7 +1766,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 108
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

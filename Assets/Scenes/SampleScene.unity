@@ -3626,6 +3626,7 @@ MonoBehaviour:
   onDamageVfxDuration: 0.2
   hitVfxColor: {r: 1, g: 0, b: 0, a: 1}
   hitVfx: {fileID: 8974720269148361487, guid: c44dfa51082d76b45b03ad31e72ef485, type: 3}
+  critHitVfx: {fileID: 2032348024842091058, guid: 6b112b2bb3df7c5419251e4b22057b66, type: 3}
 --- !u!114 &682244556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3638,7 +3639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a6df89eb79fa54aab3e5181efeedc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Combat
-  damage: 10
   targetCheck: {fileID: 223454649}
   targetCheckRadius: 1
   whatIsTarget:
@@ -3672,9 +3672,9 @@ MonoBehaviour:
     damage:
       baseValue: 10
     critPower:
-      baseValue: 0
+      baseValue: 250
     critChance:
-      baseValue: 0
+      baseValue: 100
     fireDamage:
       baseValue: 0
     iceDamage:
@@ -4023,6 +4023,7 @@ MonoBehaviour:
   onDamageVfxDuration: 0.2
   hitVfxColor: {r: 1, g: 1, b: 1, a: 1}
   hitVfx: {fileID: 0}
+  critHitVfx: {fileID: 0}
 --- !u!1 &843078987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4269,7 +4270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53067d575a84094e9d9d40a352cc474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
-  damage: 10
   targetCheck: {fileID: 651479313}
   targetCheckRadius: 1
   whatIsTarget:
@@ -4310,6 +4310,7 @@ MonoBehaviour:
   onDamageVfxDuration: 0.2
   hitVfxColor: {r: 0, g: 0, b: 0, a: 1}
   hitVfx: {fileID: 8974720269148361487, guid: c44dfa51082d76b45b03ad31e72ef485, type: 3}
+  critHitVfx: {fileID: 2032348024842091058, guid: 6b112b2bb3df7c5419251e4b22057b66, type: 3}
   attackAlert: {fileID: 1524161520}
 --- !u!114 &1063455931
 MonoBehaviour:
@@ -4351,7 +4352,7 @@ MonoBehaviour:
     armor:
       baseValue: 0
     evasion:
-      baseValue: 100
+      baseValue: 0
     fireRes:
       baseValue: 0
     iceRes:
