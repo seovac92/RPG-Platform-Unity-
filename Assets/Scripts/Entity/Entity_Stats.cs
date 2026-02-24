@@ -7,7 +7,7 @@ public class Entity_Stats : MonoBehaviour
     public Stat_OffenseGroup offense;
     public Stat_DefenceGroup defence;
 
-    public float GetElementalDamage(out ElementType element)
+    public float GetElementalDamage(out ElementType element, float scaleFactor = 1f)
     {
         float fireDamage = offense.fireDamage.GetValue();
         float iceDamage = offense.iceDamage.GetValue();
@@ -41,7 +41,7 @@ public class Entity_Stats : MonoBehaviour
 
         float finalDamage = highestDamage + weakerElementsDamage + bonusElementalDamage;
 
-        return finalDamage;
+        return finalDamage * scaleFactor;
     }
     public float GetElementalResistance(ElementType element)
     {
@@ -66,7 +66,7 @@ public class Entity_Stats : MonoBehaviour
 
         return finalResistance;
     }
-    public float GetPhysicalDamage(out bool isCrit)
+    public float GetPhysicalDamage(out bool isCrit, float scaleFactor = 1f)
     {
         float baseDamage = offense.damage.GetValue();
         float bonusDamage = major.strength.GetValue();
@@ -84,7 +84,7 @@ public class Entity_Stats : MonoBehaviour
 
         float finalDamage = isCrit ? totalBaseDamage * critPower : totalBaseDamage;
 
-        return finalDamage;
+        return finalDamage * scaleFactor;
     }
     public float GetArmorMitigation(float armorReduction)
     {
