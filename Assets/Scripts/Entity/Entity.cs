@@ -7,6 +7,7 @@ public class Entity : MonoBehaviour
     public event Action OnFlipped;
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
+    public Entity_Stats stats { get; private set; }
     protected StateMachine stateMachine;
 
 
@@ -31,6 +32,7 @@ public class Entity : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        stats = GetComponent<Entity_Stats>();
 
         stateMachine = new StateMachine();
 

@@ -3604,8 +3604,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f083948fa224e45a55157536e5742d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Health
-  currentHp: 0
+  currentHealth: 0
   isDead: 0
+  regenInterval: 1
+  canRegenerateHealth: 1
   knockbackPower: {x: 1.5, y: 2.5}
   heavyKnockbackPower: {x: 7, y: 7}
   knockbackDuration: 0.2
@@ -3651,6 +3653,8 @@ MonoBehaviour:
   defaultDuration: 3
   chillSlowMultiplier: 0.4
   electrifyChargeBuildUp: 0.4
+  fireScale: 0.8
+  lightningScale: 2.5
   counterRecovery: 0.1
 --- !u!114 &682244557
 MonoBehaviour:
@@ -3664,8 +3668,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776bf899c887b474a9d3b0e97f0b0f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Stats
-  maxHealth:
-    baseValue: 100
+  resources:
+    maxHealth:
+      baseValue: 100
+    healthRegen:
+      baseValue: 10
   major:
     strength:
       baseValue: 0
@@ -3676,6 +3683,8 @@ MonoBehaviour:
     vitality:
       baseValue: 7
   offense:
+    attackSpeed:
+      baseValue: 1
     damage:
       baseValue: 0
     critPower:
@@ -4306,6 +4315,8 @@ MonoBehaviour:
   defaultDuration: 3
   chillSlowMultiplier: 0.4
   electrifyChargeBuildUp: 0.4
+  fireScale: 0.8
+  lightningScale: 2.5
 --- !u!114 &1063455929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4318,8 +4329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e7e254d5139004f9bc6a49597264a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Health
-  currentHp: 0
+  currentHealth: 0
   isDead: 0
+  regenInterval: 1
+  canRegenerateHealth: 1
   knockbackPower: {x: 1.5, y: 2.5}
   heavyKnockbackPower: {x: 7, y: 7}
   knockbackDuration: 0.2
@@ -4358,8 +4371,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776bf899c887b474a9d3b0e97f0b0f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Stats
-  maxHealth:
-    baseValue: 2000
+  resources:
+    maxHealth:
+      baseValue: 100
+    healthRegen:
+      baseValue: 0
   major:
     strength:
       baseValue: 0
@@ -4370,8 +4386,10 @@ MonoBehaviour:
     vitality:
       baseValue: 0
   offense:
+    attackSpeed:
+      baseValue: 1
     damage:
-      baseValue: 0
+      baseValue: 20
     critPower:
       baseValue: 0
     critChance:
