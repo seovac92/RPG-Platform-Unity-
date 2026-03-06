@@ -127,4 +127,36 @@ public class Entity_Stats : MonoBehaviour
         float finalMaxHealth = baseMaxHealth + bonusMaxHealth;
         return finalMaxHealth;
     }
+    public Stat GetStatByType(StatType type)
+    {
+        switch (type)
+        {
+            case StatType.MaxHealth: return resources.maxHealth;
+            case StatType.HealthRegen: return resources.healthRegen;
+
+            case StatType.Strength: return major.strength;
+            case StatType.Agilitiy: return major.agility;
+            case StatType.Intelligence: return major.intelligence;
+            case StatType.Vitality: return major.vitality;
+
+            case StatType.AttackSpeed: return offense.attackSpeed;
+            case StatType.Damage: return offense.damage;
+            case StatType.CritChance: return offense.critChance;
+            case StatType.CritPower: return offense.critPower;
+            case StatType.ArmorReduction: return offense.armorReduction;
+            case StatType.FireDamage: return offense.fireDamage;
+            case StatType.IceDamage: return offense.iceDamage;
+            case StatType.LightningDamage: return offense.lightningDamage;
+
+            case StatType.Armor: return defence.armor;
+            case StatType.Evasion: return defence.evasion;
+            case StatType.IceResistance: return defence.iceRes;
+            case StatType.FireResistance: return defence.fireRes;
+            case StatType.LightningResistance: return defence.lightningRes;
+
+            default:
+                Debug.Log($"Stat type {type} not implemented yet");
+                return null;
+        }
+    }
 }
