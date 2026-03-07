@@ -3676,19 +3676,6 @@ MonoBehaviour:
     healthRegen:
       baseValue: 10
       modifiers: []
-  major:
-    strength:
-      baseValue: 0
-      modifiers: []
-    agility:
-      baseValue: 0
-      modifiers: []
-    intelligence:
-      baseValue: 0
-      modifiers: []
-    vitality:
-      baseValue: 7
-      modifiers: []
   offense:
     attackSpeed:
       baseValue: 1
@@ -3729,6 +3716,19 @@ MonoBehaviour:
       modifiers: []
     lightningRes:
       baseValue: 0
+      modifiers: []
+  major:
+    strength:
+      baseValue: 0
+      modifiers: []
+    agility:
+      baseValue: 0
+      modifiers: []
+    intelligence:
+      baseValue: 0
+      modifiers: []
+    vitality:
+      baseValue: 7
       modifiers: []
 --- !u!114 &682244558
 MonoBehaviour:
@@ -4257,19 +4257,6 @@ MonoBehaviour:
     healthRegen:
       baseValue: 0
       modifiers: []
-  major:
-    strength:
-      baseValue: 0
-      modifiers: []
-    agility:
-      baseValue: 0
-      modifiers: []
-    intelligence:
-      baseValue: 0
-      modifiers: []
-    vitality:
-      baseValue: 0
-      modifiers: []
   offense:
     attackSpeed:
       baseValue: 1
@@ -4309,6 +4296,19 @@ MonoBehaviour:
       baseValue: 0
       modifiers: []
     lightningRes:
+      baseValue: 0
+      modifiers: []
+  major:
+    strength:
+      baseValue: 0
+      modifiers: []
+    agility:
+      baseValue: 0
+      modifiers: []
+    intelligence:
+      baseValue: 0
+      modifiers: []
+    vitality:
       baseValue: 0
       modifiers: []
 --- !u!114 &1063455932
