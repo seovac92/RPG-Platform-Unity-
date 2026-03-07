@@ -3668,6 +3668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776bf899c887b474a9d3b0e97f0b0f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Stats
+  defaultStatSetup: {fileID: 11400000, guid: d091b0f4c52d40c42aa781ae506d8c34, type: 2}
   resources:
     maxHealth:
       baseValue: 1000
@@ -4248,9 +4249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776bf899c887b474a9d3b0e97f0b0f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Stats
+  defaultStatSetup: {fileID: 11400000, guid: 56bac03443e3bbc4c85685093c4122f5, type: 2}
   resources:
     maxHealth:
-      baseValue: 1000
+      baseValue: 100
       modifiers: []
     healthRegen:
       baseValue: 0
@@ -4273,13 +4275,13 @@ MonoBehaviour:
       baseValue: 1
       modifiers: []
     damage:
-      baseValue: 20
+      baseValue: 10
       modifiers: []
     critPower:
-      baseValue: 0
+      baseValue: 10
       modifiers: []
     critChance:
-      baseValue: 0
+      baseValue: 10
       modifiers: []
     armorReduction:
       baseValue: 0
@@ -4307,7 +4309,7 @@ MonoBehaviour:
       baseValue: 0
       modifiers: []
     lightningRes:
-      baseValue: 60
+      baseValue: 0
       modifiers: []
 --- !u!114 &1063455932
 MonoBehaviour:
