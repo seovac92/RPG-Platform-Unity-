@@ -1,20 +1,74 @@
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class UI_TreeNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
+    [SerializeField] private Skill_DataSO skillData;
+    [SerializeField] private string skillName;
+    [SerializeField] private Image skillIcon;
+    private string lockedColorHex = "#AAA7A7";
+    private Color lastColor;
+    public bool isUnlocked;
+    public bool isLocked;
+
+    void OnValidate()
+    {
+        if (skillData == null) return;
+
+        skillName = skillData.displayName;
+        skillIcon.sprite = skillData.icon;
+        gameObject.name = "UI - Tree Node " + skillData.displayName;
+    }
+    private void Awake()
+    {
+        UpdateIconColor(GetColorByHex(lockedColorHex));
+    }
+    private void Unlock()
+    {
+        isUnlocked = true;
+        UpdateIconColor(Color.white);
+    }
+    private bool CanBeUnlocked()
+    {
+        if (isLocked || isUnlocked) return false;
+
+        return true;
+    }
+    private void UpdateIconColor(Color color)
+    {
+        if (skillIcon == null) return;
+
+        lastColor = skillIcon.color;
+        skillIcon.color = color;
+    }
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Unlock skill");
+        if (CanBeUnlocked())
+        {
+            Unlock();
+        }
+        else
+        {
+            Debug.Log("Cannot be unlocked");
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Show skill tooltip");
+        if (isUnlocked) return;
+        UpdateIconColor(Color.white);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Hide skill tooltip");
+        if (isUnlocked) return;
+        UpdateIconColor(lastColor);
+    }
+    private Color GetColorByHex(string hexNumber)
+    {
+        ColorUtility.TryParseHtmlString(hexNumber, out Color color);
+
+        return color;
     }
 }
