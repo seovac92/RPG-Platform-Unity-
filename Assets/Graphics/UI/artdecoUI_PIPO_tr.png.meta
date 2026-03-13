@@ -206,12 +206,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 657
-        width: 226
-        height: 216
+        x: 27
+        y: 658
+        width: 224
+        height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_1
       rect:
         serializedVersion: 2
-        x: 310
-        y: 672
-        width: 314
-        height: 197
+        x: 311
+        y: 673
+        width: 312
+        height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_2
       rect:
         serializedVersion: 2
-        x: 679
-        y: 679
-        width: 247
-        height: 187
+        x: 680
+        y: 680
+        width: 245
+        height: 185
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_3
       rect:
         serializedVersion: 2
-        x: 991
-        y: 711
-        width: 180
-        height: 157
+        x: 992
+        y: 712
+        width: 178
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_4
       rect:
         serializedVersion: 2
-        x: 1228
-        y: 749
-        width: 180
-        height: 114
+        x: 1229
+        y: 750
+        width: 178
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_5
       rect:
         serializedVersion: 2
-        x: 707
-        y: 431
-        width: 207
-        height: 205
+        x: 708
+        y: 432
+        width: 205
+        height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_6
       rect:
         serializedVersion: 2
-        x: 991
-        y: 581
-        width: 58
-        height: 54
+        x: 992
+        y: 582
+        width: 56
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_7
       rect:
         serializedVersion: 2
-        x: 1072
-        y: 592
-        width: 14
-        height: 38
+        x: 1073
+        y: 583
+        width: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -379,59 +379,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artdecoUI_PIPO_tr_8
-      rect:
-        serializedVersion: 2
-        x: 1082
-        y: 616
-        width: 40
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0375d1eff54b13ef0800000000000000
-      internalID: -130124589838805200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: artdecoUI_PIPO_tr_9
-      rect:
-        serializedVersion: 2
-        x: 1108
-        y: 582
-        width: 14
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd1cde6d7d9506e50800000000000000
-      internalID: 6800534220888195548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: artdecoUI_PIPO_tr_10
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 611
-        width: 174
-        height: 86
+        x: 1225
+        y: 612
+        width: 172
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,12 +404,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_11
       rect:
         serializedVersion: 2
-        x: 17
-        y: 402
-        width: 287
-        height: 184
+        x: 18
+        y: 403
+        width: 285
+        height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -467,37 +423,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artdecoUI_PIPO_tr_12
-      rect:
-        serializedVersion: 2
-        x: 1072
-        y: 582
-        width: 40
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76e4453b8916f30b0800000000000000
-      internalID: -5746767291029893529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: artdecoUI_PIPO_tr_13
       rect:
         serializedVersion: 2
-        x: 342
-        y: 459
-        width: 228
-        height: 119
+        x: 343
+        y: 460
+        width: 226
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -514,13 +448,13 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_14
       rect:
         serializedVersion: 2
-        x: 970
-        y: 445
-        width: 93
-        height: 87
+        x: 971
+        y: 446
+        width: 91
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
       customData: 
       outline: []
       physicsShape: []
@@ -536,12 +470,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_15
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 422
-        width: 208
-        height: 120
+        x: 1204
+        y: 423
+        width: 206
+        height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -558,12 +492,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_16
       rect:
         serializedVersion: 2
-        x: 15
-        y: 156
-        width: 303
-        height: 174
+        x: 16
+        y: 157
+        width: 301
+        height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -580,12 +514,12 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_17
       rect:
         serializedVersion: 2
-        x: 364
-        y: 90
-        width: 359
-        height: 291
+        x: 365
+        y: 91
+        width: 357
+        height: 289
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,7 +536,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 696df3529e3e7a54185326f3f87796a5
     internalID: 0
     vertices: []
     indices: 
@@ -610,7 +544,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       artdecoUI_PIPO_tr_0: 5717465431152502704
       artdecoUI_PIPO_tr_1: -8483078968825879121

@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class UI_TreeNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
 {
+    private UI ui;
+    private RectTransform rect;
     [SerializeField] private Skill_DataSO skillData;
     [SerializeField] private string skillName;
     [SerializeField] private Image skillIcon;
@@ -12,16 +14,10 @@ public class UI_TreeNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public bool isUnlocked;
     public bool isLocked;
 
-    void OnValidate()
-    {
-        if (skillData == null) return;
-
-        skillName = skillData.displayName;
-        skillIcon.sprite = skillData.icon;
-        gameObject.name = "UI - Tree Node " + skillData.displayName;
-    }
     private void Awake()
     {
+        ui = GetComponentInParent<UI>();
+        rect = GetComponent<RectTransform>();
         UpdateIconColor(GetColorByHex(lockedColorHex));
     }
     private void Unlock()
@@ -56,12 +52,16 @@ public class UI_TreeNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        ui.skillToolTip.ShowToolTip(true, rect, skillData);
+
         if (isUnlocked) return;
         UpdateIconColor(Color.white);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        ui.skillToolTip.ShowToolTip(false, rect);
+
         if (isUnlocked) return;
         UpdateIconColor(lastColor);
     }
@@ -70,5 +70,13 @@ public class UI_TreeNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         ColorUtility.TryParseHtmlString(hexNumber, out Color color);
 
         return color;
+    }
+    void OnValidate()
+    {
+        if (skillData == null) return;
+
+        skillName = skillData.displayName;
+        skillIcon.sprite = skillData.icon;
+        gameObject.name = "UI - Tree Node " + skillData.displayName;
     }
 }
