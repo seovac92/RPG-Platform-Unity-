@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77190595500d0394a9375c2d59fdbd50, type: 3}
+  m_Name: Skill data - Timeless attack
+  m_EditorClassIdentifier: Assembly-CSharp::Skill_DataSO
+  cost: 2
+  displayName: Timeless attack
+  description: The Time echo can perform 1 attack.
+  icon: {fileID: -1722060535, guid: fce92138d6f4aba4bbe9b93283da8f63, type: 3}
