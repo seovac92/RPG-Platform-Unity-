@@ -4,6 +4,7 @@ public abstract class PlayerState : EntityState
 {
     protected Player player;
     protected PlayerInputSet input;
+    protected Player_SkillManager skillManager;
 
 
     public PlayerState
@@ -15,6 +16,7 @@ public abstract class PlayerState : EntityState
         rb = player.rb;
         stats = player.stats;
         input = player.input;
+        skillManager = player.skillManager;
     }
 
 
@@ -24,11 +26,16 @@ public abstract class PlayerState : EntityState
 
         if (input.Player.Dash.WasPressedThisFrame() && CanDash())
         {
+            skillManager.dash.SetSkillOnCooldown();
             stateMachine.ChangeState(player.dashState);
         }
     }
     private bool CanDash()
     {
+        if (!skillManager.dash.CanUseSkill())
+        {
+            return false;
+        }
         if (player.wallDetected)
         {
             return false;
