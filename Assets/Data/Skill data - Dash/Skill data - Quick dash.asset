@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Skill data - Quick dash
   m_EditorClassIdentifier: Assembly-CSharp::Skill_DataSO
   cost: 0
+  unlockByDefault: 1
   skillType: 0
   upgradeData:
     upgradeType: 0
