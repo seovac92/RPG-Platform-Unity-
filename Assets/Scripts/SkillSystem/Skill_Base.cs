@@ -12,6 +12,10 @@ public class Skill_Base : MonoBehaviour
     {
         lastTimeUsed = lastTimeUsed - cooldown;
     }
+    public virtual void TryUseSkill()
+    {
+
+    }
     public void SetSkillUpgrade(UpgradeData upgrade)
     {
         upgradeType = upgrade.upgradeType;
