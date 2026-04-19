@@ -69,7 +69,7 @@ public class Player : Entity
 
         stateMachine.Initialize(idleState);
     }
-
+    public void TeleportPlayer(Vector3 position) => transform.position = position;
     protected override IEnumerator SlowDownEntityCo(float duration, float slowMultiplier)
     {
         float originalMoveSpeed = moveSpeed;

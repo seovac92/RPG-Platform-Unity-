@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class SkillObject_Shard : SkillObject_Base
 {
+    public event Action OnExplode;
     [SerializeField] private GameObject vfxPrefab;
     private Transform target;
     private float speed;
@@ -21,11 +23,12 @@ public class SkillObject_Shard : SkillObject_Base
     {
         Invoke(nameof(Explode), detonationTime);
     }
-    private void Explode()
+    public void Explode()
     {
         DamageEnemiesInRadius(transform, checkRadius);
         Instantiate(vfxPrefab, transform.position, Quaternion.identity);
 
+        OnExplode?.Invoke();
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -12,7 +12,7 @@ public enum SkillUpgradeType
     //---------------------Shard tree---------------------------
     Shard, //The shard explodes when touched by an enemy or time goes up
     Shard_MoveToEnemy,//The shard will move toward nearest enemy
-    Shard_TripleCast,//The shard ability can have up to N changes. You can cast them all in a raw
+    Shard_MultiCast,//The shard ability can have up to N changes. You can cast them all in a raw
     Shard_Teleport,//You can swap places with the last you created 
-    Shard_TeleportAndHeal,//When you swap places with the shard, your HP % is same as it was when you created shard
+    Shard_TeleportHpRewind,//When you swap places with the shard, your HP % is same as it was when you created shard
 }
