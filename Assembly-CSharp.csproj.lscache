@@ -54,6 +54,9 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.1
 [sourceFiles]
 Assets/
  InputSystem/PlayerInputSet.cs
+ Scripts/Data/
+  DamageScaleData.cs
+  ElementalEffectData.cs
  Scripts/Enemy/
   Enemy.cs
   EnemyStates/

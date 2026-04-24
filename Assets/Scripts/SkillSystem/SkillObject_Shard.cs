@@ -4,6 +4,7 @@ using UnityEngine;
 public class SkillObject_Shard : SkillObject_Base
 {
     public event Action OnExplode;
+    private Skill_Shard shardManager;
     [SerializeField] private GameObject vfxPrefab;
     private Transform target;
     private float speed;
@@ -19,8 +20,15 @@ public class SkillObject_Shard : SkillObject_Base
         target = FindClosestTarget();
         this.speed = speed;
     }
-    public void SetupShard(float detonationTime)
+    public void SetupShard(Skill_Shard shardManager)
     {
+        this.shardManager = shardManager;
+
+        playerStats = shardManager.player.stats;
+        damageScaleData = shardManager.damageScaleData;
+
+        float detonationTime = shardManager.GetDetonateTime();
+
         Invoke(nameof(Explode), detonationTime);
     }
     public void Explode()
