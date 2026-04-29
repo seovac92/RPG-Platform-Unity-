@@ -17,7 +17,7 @@ public class Entity_VFX : MonoBehaviour
     [Header("Element Colors")]
     [SerializeField] private Color chillVfx = Color.cyan;
     [SerializeField] private Color burnVfx = Color.red;
-    [SerializeField] private Color electrifyVfx = Color.yellow;
+    [SerializeField] private Color shockVfx = Color.yellow;
     private Color originalHitVfxColor;
 
     void Awake()
@@ -39,7 +39,7 @@ public class Entity_VFX : MonoBehaviour
         }
         if (element == ElementType.Lightning)
         {
-            StartCoroutine(PlayStatusVfxCo(duration, electrifyVfx));
+            StartCoroutine(PlayStatusVfxCo(duration, shockVfx));
         }
     }
     public void StopAllVfx()
@@ -69,27 +69,26 @@ public class Entity_VFX : MonoBehaviour
         }
         sr.color = Color.white;
     }
-    public void CreateOnHitVFX(Transform target, bool isCrit)
+    public void CreateOnHitVFX(Transform target, bool isCrit, ElementType element)
     {
         GameObject hitPrefab = isCrit ? critHitVfx : hitVfx;
         GameObject vfx = Instantiate(hitPrefab, target.position, Quaternion.identity);
         SpriteRenderer vfxRenderer = vfx.GetComponentInChildren<SpriteRenderer>();
-        vfxRenderer.color = hitVfxColor;
+        vfxRenderer.color = GetElementColor(element);
 
         if (entity.facingDir == -1 && isCrit)
         {
             vfx.transform.Rotate(0, 180, 0);
         }
     }
-    public void UpdateOnHitColor(ElementType element)
+    public Color GetElementColor(ElementType element)
     {
-        if (element == ElementType.Ice)
+        switch (element)
         {
-            hitVfxColor = chillVfx;
-        }
-        if (element == ElementType.None)
-        {
-            hitVfxColor = originalHitVfxColor;
+            case ElementType.Ice: return chillVfx;
+            case ElementType.Fire: return burnVfx;
+            case ElementType.Lightning: return shockVfx;
+            default: return Color.white;
         }
     }
     public void PlayOnDamageVfx()

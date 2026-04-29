@@ -47,8 +47,7 @@ public class Entity_Combat : MonoBehaviour
 
             if (targetGotHit)
             {
-                vfx.UpdateOnHitColor(element);
-                vfx.CreateOnHitVFX(target.transform, isCrit);
+                vfx.CreateOnHitVFX(target.transform, isCrit, element);
             }
         }
     }

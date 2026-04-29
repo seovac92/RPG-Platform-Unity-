@@ -47,7 +47,8 @@ public class SkillObject_Shard : SkillObject_Base
     public void Explode()
     {
         DamageEnemiesInRadius(transform, checkRadius);
-        Instantiate(vfxPrefab, transform.position, Quaternion.identity);
+        GameObject vfx = Instantiate(vfxPrefab, transform.position, Quaternion.identity);
+        vfx.GetComponentInChildren<SpriteRenderer>().color = shardManager.player.vfx.GetElementColor(usedElement);
 
         OnExplode?.Invoke();
         Destroy(gameObject);
