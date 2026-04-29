@@ -6513,10 +6513,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481743057}
-  - {fileID: 534669592}
-  - {fileID: 857363367}
   - {fileID: 458174745}
   - {fileID: 1180473039}
+  - {fileID: 534669592}
+  - {fileID: 857363367}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7638,9 +7638,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI_TreeNode
   neededNodes:
   - {fileID: 1684358215}
+  - {fileID: 1481743059}
   conflictNodes:
   - {fileID: 2109405518}
-  - {fileID: 866834969}
   isUnlocked: 0
   isLocked: 0
   skillData: {fileID: 11400000, guid: 16717f1e14b329b4ab62126c3e8762e7, type: 2}
@@ -18866,15 +18866,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2071692211760776965, guid: c195077debd19a34998cc3c85c2c821c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2071692211760776965, guid: c195077debd19a34998cc3c85c2c821c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7244174920614389366, guid: c195077debd19a34998cc3c85c2c821c, type: 3}
       propertyPath: m_Name
       value: Enemy_Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7244174920614389366, guid: c195077debd19a34998cc3c85c2c821c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

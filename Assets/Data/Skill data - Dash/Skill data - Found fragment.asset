@@ -13,10 +13,21 @@ MonoBehaviour:
   m_Name: Skill data - Found fragment
   m_EditorClassIdentifier: Assembly-CSharp::Skill_DataSO
   cost: 0
+  unlockByDefault: 0
   skillType: 0
   upgradeData:
-    upgradeType: 4
+    upgradeType: 5
     cooldown: 3
+    damageScaleData:
+      physical: 1
+      elemental: 1
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 3
+      burnDamageScale: 1
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.4
   displayName: Found fragment
   description: 'Create time shard on arrival.
 

@@ -31,6 +31,19 @@ public class SkillObject_Shard : SkillObject_Base
 
         Invoke(nameof(Explode), detonationTime);
     }
+    public void SetupShard(Skill_Shard shardManager, float detonationTime, bool canMove, float shardSpeed)
+    {
+        this.shardManager = shardManager;
+        playerStats = shardManager.player.stats;
+        damageScaleData = shardManager.damageScaleData;
+
+        Invoke(nameof(Explode), detonationTime);
+
+        if (canMove)
+        {
+            MoveTowardsClosestTarget(shardSpeed);
+        }
+    }
     public void Explode()
     {
         DamageEnemiesInRadius(transform, checkRadius);

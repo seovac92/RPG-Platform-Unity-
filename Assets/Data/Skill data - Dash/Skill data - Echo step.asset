@@ -13,10 +13,21 @@ MonoBehaviour:
   m_Name: Skill data - Echo step
   m_EditorClassIdentifier: Assembly-CSharp::Skill_DataSO
   cost: 0
+  unlockByDefault: 0
   skillType: 0
   upgradeData:
-    upgradeType: 1
+    upgradeType: 2
     cooldown: 3
+    damageScaleData:
+      physical: 1
+      elemental: 1
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 3
+      burnDamageScale: 1
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.4
   displayName: Echo step
   description: 'Create a time echo before you dash.
 
