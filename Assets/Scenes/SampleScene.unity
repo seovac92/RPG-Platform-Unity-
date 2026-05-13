@@ -939,10 +939,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1684358213}
+  - {fileID: 866834967}
   - {fileID: 798288452}
   - {fileID: 934500989}
   - {fileID: 2109405516}
-  - {fileID: 866834967}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6331,7 +6331,7 @@ MonoBehaviour:
   critHitVfx: {fileID: 2032348024842091058, guid: 6b112b2bb3df7c5419251e4b22057b66, type: 3}
   chillVfx: {r: 0, g: 1, b: 1, a: 1}
   burnVfx: {r: 1, g: 0, b: 0, a: 1}
-  electrifyVfx: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  shockVfx: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   imageEchoInterval: 0.05
   imageEchoPrefab: {fileID: 2938321190374363188, guid: 6e3056118dda09643ac30ee9f2ef30eb, type: 3}
 --- !u!1 &702205656
@@ -6513,10 +6513,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481743057}
-  - {fileID: 458174745}
-  - {fileID: 1180473039}
   - {fileID: 534669592}
   - {fileID: 857363367}
+  - {fileID: 458174745}
+  - {fileID: 1180473039}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -11306,10 +11306,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1992385469}
-  - {fileID: 674479307}
-  - {fileID: 639713279}
   - {fileID: 512046402}
   - {fileID: 661591875}
+  - {fileID: 674479307}
+  - {fileID: 639713279}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
