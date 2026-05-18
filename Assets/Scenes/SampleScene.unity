@@ -939,10 +939,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1684358213}
-  - {fileID: 866834967}
   - {fileID: 798288452}
   - {fileID: 934500989}
   - {fileID: 2109405516}
+  - {fileID: 866834967}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6205,11 +6205,6 @@ MonoBehaviour:
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256
-  defaultDuration: 3
-  chillSlowMultiplier: 0.4
-  electrifyChargeBuildUp: 0.4
-  fireScale: 0.8
-  lightningScale: 2.5
   counterRecovery: 0.1
 --- !u!114 &682244557
 MonoBehaviour:
@@ -6513,10 +6508,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481743057}
-  - {fileID: 534669592}
-  - {fileID: 857363367}
   - {fileID: 458174745}
   - {fileID: 1180473039}
+  - {fileID: 534669592}
+  - {fileID: 857363367}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7195,7 +7190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &855647708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11306,10 +11301,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1992385469}
-  - {fileID: 512046402}
-  - {fileID: 661591875}
   - {fileID: 674479307}
   - {fileID: 639713279}
+  - {fileID: 512046402}
+  - {fileID: 661591875}
   m_Father: {fileID: 855647708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
